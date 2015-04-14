@@ -4,6 +4,9 @@ set number
 " use vim rather than vi defaults
 set nocompatible
 
+" spell checking
+set spell spelllang=en_ca
+
 " (ws) allows search to wrap to top of document when the bottom has been hit
 set wrapscan
 " (is) highlights what you are searching for as you type
