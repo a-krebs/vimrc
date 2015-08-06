@@ -34,13 +34,15 @@ set smartindent
 set ruler
 
 " set marker at 80 chars
-let &colorcolumn="81,".join(range(121,500),",")
+"let &colorcolumn="81,".join(range(121,500),",")
+let &colorcolumn="81,121"
 " better marker colours
 "highlight ColorColumn ctermbg=236
 " highlight cursor line
 set cursorline
 
 au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile *.yaml,*.yml so ~/.vim/yaml.vim
 
 " Python tab size
 au FileType python setl shiftwidth=4
@@ -89,4 +91,4 @@ for scheme in [ 'solarized', 'molokai', 'desert' ]
 endfor
 
 " override color scheme bg
-"hi Normal ctermbg=None
+hi Normal ctermbg=None
