@@ -50,6 +50,12 @@ au FileType python setl softtabstop=4
 " Python use spaces as tabs
 au FileType python setl et
 
+" ruby tab size
+au FileType ruby setl shiftwidth=2
+au FileType ruby setl softtabstop=2
+" ruby use spaces as tabs
+au FileType ruby setl et
+
 " C++ tab size
 au FileType cpp,hpp setl shiftwidth=4
 au FileType cpp,hpp setl softtabstop=4
@@ -59,6 +65,11 @@ au FileType cpp,hpp setl et
 " CMakeLists use 4 space tabs
 au FileType cmake setl shiftwidth=4
 au FileType cmake setl softtabstop=4
+
+" HTML uses 4 space tabs (expand tabs)
+au FileType html setl shiftwidth=4
+au FileType html setl softtabstop=4
+au FileType html setl et
 
 " use 8-space hard tabs for indent in C
 au Filetype c,h setl shiftwidth=8
